@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-sclale =1.0">
+    <title>On the Road Survey Form</title>
+    <link rel="stylesheet" href="./surveyForm.css">
+  </head>
+  <body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">On the Road Survey Form</h1>
+            <p id="description" class="description text-center">
+            Please select your favorite places that perfect for us to be on the road
+            </p>  
+        </header>
+
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your lovely name" required>
+            </div>
+
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label" for="number">Age
+                <span class="clue">(optional)</span>
+                </label>
+                <input type="number" name="age" id="number"  min="18"  max="60" class="form-control" placeholder="Age"> 
+            </div>
+
+            <div class="form-group">
+                <p>Tell us your prerferences</p>
+                <select id="dropdown" name="prefer" class="form-control" required>
+                    <option disabled selected value>Select one</option>
+                    <option>Adventure</option>
+                    <option>Trekking</option>
+                    <option>Hinking</option>
+                    <option>Trail</option>
+                    <option>Sightseeing</option>
+                    <option>Other</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <p>Would you recommend this trip to friends?</p>
+                <label><input  name="user-recommend"  value="absolutely" type="radio" class="input-radio" checked>
+                    Absolutely</label>
+                <label><input  name="user-recommend"  value="Let-see" type="radio" class="input-radio">
+                    Let's see</label>
+                <label><input  name="user-recommend"  value="not-sure" type="radio" class="input-radio">
+                    Not sure</label>
+            </div>
+
+            <div class="form-group">
+                <p>What's your faviote places to be on the road?
+                <span>(you can have more than one favorite)</span>
+                </p>
+                <label><input name="prefer" value="chiangmai" type="checkbox" class="input-checkbox"> Chaing Mai</label>
+                <label><input name="prefer" value="lampang" type="checkbox" class="input-checkbox"> Lampang</label> 
+                <label><input name="prefer" value="maehongsorn" type="checkbox" class="input-checkbox"> Mae Hongsorn</label> 
+                <label><input name="prefer" value="chiangrai" type="checkbox" class="input-checkbox"> Chaing Rai</label>
+                <label><input name="prefer" value="loei" type="checkbox" class="input-checkbox"> Loei</label>        
+                <label><input name="prefer" value="Ubonratchathani" type="checkbox" class="input-checkbox"> Ubon Ratchathani</label> 
+                <label><input name="prefer" value="surin" type="checkbox" class="input-checkbox">Surin</label> 
+                <label><input name="prefer" value="chumporn" type="checkbox" class="input-checkbox">Chumporn</label>    
+                <label><input name="prefer" value="Suratthani" type="checkbox" class="input-checkbox"> Suratthani</label> 
+                <label><input name="prefer" value="nakhonsritammmarat" type="checkbox" class="input-checkbox"> Nakhonsritammarat</label>   
+                <label><input name="prefer" value="krabi" type="checkbox" class="input-checkbox"> Krabi</label>    
+                <label><input name="prefer" value="phuket" type="checkbox" class="input-checkbox"> Phuket</label>  
+            </div>
+
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comments here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Hit the Road</button>
+            </div>
+
+        </form>
+    </div>
+
+
+  </body>
+</html>
